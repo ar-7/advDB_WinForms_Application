@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05A051BF-CC2B-4870-A7B3-C1F628269371}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ROB19002438_LP20549A1_advDB</RootNamespace>
+    <AssemblyName>ROB19002438_LP20549A1_advDB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Renci.SshNet, Version=2020.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAccountTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccountTable.Designer.cs">
+      <DependentUpon>AdminAccountTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffFunctions.Designer.cs">
+      <DependentUpon>StaffFunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelTable.Designer.cs">
+      <DependentUpon>HotelTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotel_bookingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hotel_bookingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMenu.Designer.cs">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CityTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CityTable.Designer.cs">
+      <DependentUpon>CityTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostcodeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostcodeTable.Designer.cs">
+      <DependentUpon>PostcodeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomTypeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomTypeTable.Designer.cs">
+      <DependentUpon>RoomTypeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentRecordTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentRecordTable.Designer.cs">
+      <DependentUpon>PaymentRecordTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingTable.Designer.cs">
+      <DependentUpon>BookingTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelRoomTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelRoomTable.Designer.cs">
+      <DependentUpon>HotelRoomTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageTable.Designer.cs">
+      <DependentUpon>ImageTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomBookingTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomBookingTable.Designer.cs">
+      <DependentUpon>RoomBookingTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccountTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccountTable.Designer.cs">
+      <DependentUpon>UserAccountTable.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAccountTable.resx">
+      <DependentUpon>AdminAccountTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffFunctions.resx">
+      <DependentUpon>StaffFunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelTable.resx">
+      <DependentUpon>HotelTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffMenu.resx">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CityTable.resx">
+      <DependentUpon>CityTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostcodeTable.resx">
+      <DependentUpon>PostcodeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomTypeTable.resx">
+      <DependentUpon>RoomTypeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentRecordTable.resx">
+      <DependentUpon>PaymentRecordTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingTable.resx">
+      <DependentUpon>BookingTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelRoomTable.resx">
+      <DependentUpon>HotelRoomTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageTable.resx">
+      <DependentUpon>ImageTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomBookingTable.resx">
+      <DependentUpon>RoomBookingTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccountTable.resx">
+      <DependentUpon>UserAccountTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hotel_bookingDataSet.xsc">
+      <DependentUpon>hotel_bookingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hotel_bookingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hotel_bookingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hotel_bookingDataSet.xss">
+      <DependentUpon>hotel_bookingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminDocumentation.html" />
+    <Content Include="MainMenuDocumentation.html" />
+    <Content Include="StaffDocumentation.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
